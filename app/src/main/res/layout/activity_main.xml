@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/numbers"
+        android:background="@color/category_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numbers"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_family"
+        android:text="Family"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/numbers" />
+
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_color"
+        android:text="Colors"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/family" />
+
+    <TextView
+        android:id="@+id/phrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_phrases"
+        android:text="Phrases"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/colors" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
